@@ -117,7 +117,9 @@ User login.
 ```json
 {
   "user_id": 1,
+  "title": "Meeting",
   "text": "Xiaoming, nice to meet you!",
+  "image_url": "https://ligen.life/img/92405302_p18.jpg",
   "year": 2023,
   "month": 7
 }
@@ -126,6 +128,7 @@ User login.
 | Parameter | Required | Note |
 | --------- | -------- | ---- |
 | `user_id` | Required |      |
+| `title` | Required |      |
 | `text`    | Required |      |
 | `year`    | Required |      |
 | `month`   | Required |      |
@@ -183,7 +186,9 @@ Get `Posts` based on constraints.
       {
         "post_id": 1,
         "user_id": 1,
+        "title": "Meeting",
         "text": "Xiaoming, nice to meet you!",
+        "image_url": "https://ligen.life/img/92405302_p18.jpg",
         "year": 2023,
         "month": 7,
         "person": [
@@ -205,8 +210,6 @@ Get `Posts` based on constraints.
   },
 }
 ```
-
-
 
 ## Person
 
