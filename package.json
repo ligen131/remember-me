@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "commit": "cz-customizable",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "commitlint-config-cz": "^0.13.3",
+    "commitlint-config-git-commit-emoji": "^1.0.0",
+    "cz-customizable": "^7.0.0",
+    "husky": "^8.0.2"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
