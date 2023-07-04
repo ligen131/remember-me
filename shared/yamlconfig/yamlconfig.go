@@ -3,6 +3,7 @@ package yamlconfig
 import (
 	"remember-me/controllers/auth"
 	"remember-me/model"
+	"remember-me/shared/qiniu"
 	"remember-me/shared/server"
 	"remember-me/utils/logs"
 
@@ -15,6 +16,7 @@ type Configuration struct {
 	Server        server.Server      `yaml:"server"`
 	Database      model.Database     `yaml:"database"`
 	Authorization auth.Authorization `yaml:"Authorization"`
+	Qiniu         qiniu.Config       `yaml:"qiniu"`
 }
 
 func ConfigLoad(path string) (Configuration, error) {

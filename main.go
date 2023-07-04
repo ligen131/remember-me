@@ -3,6 +3,7 @@ package main
 import (
 	"remember-me/controllers/auth"
 	"remember-me/model"
+	"remember-me/shared/qiniu"
 	"remember-me/shared/server"
 	"remember-me/shared/yamlconfig"
 )
@@ -24,6 +25,11 @@ func main() {
 	}
 
 	err = auth.InitAuthorization(configuration.Authorization)
+	if err != nil {
+		panic(err)
+	}
+
+	err = qiniu.InitQiniu(configuration.Qiniu)
 	if err != nil {
 		panic(err)
 	}

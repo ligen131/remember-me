@@ -32,4 +32,6 @@ func routes(e *echo.Echo) {
 		postGroup.GET("", controllers.PostGET)
 		postGroup.GET("/", controllers.PostGET)
 	}
+
+	e.GET("/image/token", controllers.GetImageToken)
 }

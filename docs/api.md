@@ -362,3 +362,26 @@ Ask the AI questions.
 }
 ```
 
+## Image
+
+### [GET] `/image/token`
+
+Get upload token for image.
+
+#### Request
+
+no parameter needed.
+
+#### Response
+
+```json
+{
+  "code":200,
+  "msg":"OK",
+  "data":{
+    "key":"b9fa4d7d-7fa2-4ce8-b3c7-e81a9a8295ff",
+    "token":"a:0Gl_zSh1CTCz2ED3YWhVBGQrLUQ=:eyJzY29wZSI6ImM6YjlmYTRkN2QtN2ZhMi00Y2U4LWIzYzctZTgxYTlhODI5NWZmIiwiZGVhZGxpbmUiOjE2ODg0ODQyMDYsImZzaXplTGltaXQiOjEwNDg1NzYwfQ==",
+    "url":"https://cdn.rememberme.funb9fa4d7d-7fa2-4ce8-b3c7-e81a9a8295ff"
+  }
+}
+```

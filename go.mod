@@ -4,8 +4,10 @@ go 1.18
 
 require (
 	github.com/golang-jwt/jwt v3.2.2+incompatible
+	github.com/google/uuid v1.3.0
 	github.com/gookit/config/v2 v2.2.1
 	github.com/labstack/echo/v4 v4.10.2
+	github.com/qiniu/go-sdk/v7 v7.17.0
 	go.uber.org/zap v1.24.0
 	gorm.io/driver/postgres v1.5.0
 	gorm.io/gorm v1.25.0
