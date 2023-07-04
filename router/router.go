@@ -32,4 +32,10 @@ func routes(e *echo.Echo) {
 		postGroup.GET("", controllers.PostGET)
 		postGroup.GET("/", controllers.PostGET)
 	}
+
+	askGroup := e.Group(apiVersionUrl + "/ask")
+	{
+		askGroup.GET("", controllers.AskGET)
+		askGroup.GET("/", controllers.AskGET)
+	}
 }

@@ -3,6 +3,7 @@ package main
 import (
 	"remember-me/controllers/auth"
 	"remember-me/model"
+	"remember-me/shared/gpt"
 	"remember-me/shared/server"
 	"remember-me/shared/yamlconfig"
 )
@@ -27,6 +28,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	gpt.InitGpt(configuration.Gpt)
 
 	err = server.Run(configuration.Server)
 	if err != nil {
