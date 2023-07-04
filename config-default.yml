@@ -16,6 +16,12 @@ Authorization:
     secret-key: XWpHQ0Q1fUM3H8M3ysmk
     refresh-secret-key: tuiBz7zIUQYKii+ncBdt
 
+qiniu:
+  cdn_url: 
+  access_key: 
+  secret_key: 
+  bucket: 
+
 openai:
     api-token: sk-xxx
     model: gpt-3.5-turbo-16k

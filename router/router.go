@@ -38,4 +38,5 @@ func routes(e *echo.Echo) {
 		askGroup.GET("", controllers.AskGET)
 		askGroup.GET("/", controllers.AskGET)
 	}
+	e.GET("/image/token", controllers.GetImageToken)
 }

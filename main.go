@@ -4,6 +4,7 @@ import (
 	"remember-me/controllers/auth"
 	"remember-me/model"
 	"remember-me/shared/gpt"
+	"remember-me/shared/qiniu"
 	"remember-me/shared/server"
 	"remember-me/shared/yamlconfig"
 )
@@ -30,6 +31,10 @@ func main() {
 	}
 
 	gpt.InitGpt(configuration.Gpt)
+	err = qiniu.InitQiniu(configuration.Qiniu)
+	if err != nil {
+		panic(err)
+	}
 
 	err = server.Run(configuration.Server)
 	if err != nil {

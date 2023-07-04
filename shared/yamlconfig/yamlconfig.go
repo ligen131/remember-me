@@ -4,6 +4,7 @@ import (
 	"remember-me/controllers/auth"
 	"remember-me/model"
 	"remember-me/shared/gpt"
+	"remember-me/shared/qiniu"
 	"remember-me/shared/server"
 	"remember-me/utils/logs"
 
@@ -17,6 +18,7 @@ type Configuration struct {
 	Database      model.Database     `yaml:"database"`
 	Authorization auth.Authorization `yaml:"Authorization"`
 	Gpt           gpt.GptConfig      `yaml:"openai"`
+	Qiniu         qiniu.Config       `yaml:"qiniu"`
 }
 
 func ConfigLoad(path string) (Configuration, error) {
