@@ -1,0 +1,58 @@
+@import "../../assets/css/color.scss";
+
+.chat-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+}
+
+// .upload {
+//   height: 42px;
+//   width: 42px;
+//   margin-left: 1vw;
+//   margin-right: 5vw;
+//   border-radius: 50%;
+//   background-color: white;
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   & > img {
+//     height: 16px;
+//     width: 16px;
+//   }
+// }
+
+.chat-input {
+  position: absolute;
+  right: 0;
+  width: 55vw;
+  padding: 16px 24px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+
+  .input {
+    border: none;
+    outline: none;
+    resize: none;
+    flex: 1;
+    height: 18px;
+    margin-right: 32px;
+    font-size: 18px;
+    overflow: hidden;
+  }
+
+  .send {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+}

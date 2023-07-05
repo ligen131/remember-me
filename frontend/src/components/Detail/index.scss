@@ -1,0 +1,51 @@
+.detail {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+
+  .mask {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+  }
+
+  .detail-box {
+    position: relative;
+    top: 30vh;
+    height: 40vh;
+    width: fit-content;
+    margin: auto;
+    background-color: white;
+    display: flex;
+
+    .left {
+      height: 100%;
+
+      & > img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .right {
+      height: 100%;
+      width: 30vw;
+      padding: 16px;
+
+      .title {
+        font-size: 24px;
+      }
+
+      .content {
+        margin-top: 16px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

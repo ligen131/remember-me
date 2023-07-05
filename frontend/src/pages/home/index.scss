@@ -1,0 +1,20 @@
+@import "../../assets/css/color.scss";
+
+.home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $background-primary;
+  display: flex;
+
+  .main {
+    box-sizing: border-box;
+    position: relative;
+    left: -20vw;
+    margin-left: 10vw;
+    height: 90vh;
+    width: 60vw;
+    margin-top: 10vh;
+  }
+}
