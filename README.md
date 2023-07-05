@@ -83,7 +83,7 @@ AI 问答演示：<https://github.com/ligen131/remember-me/blob/main/video/AI%20
 ## Technical Details 技术细节
 
 - The backend utilizes the Golang web framework [echo](https://github.com/labstack/echo) and incorporates JWT middleware for identity verification and user authentication. 后端使用 Golang Web 后端框架 [echo](https://github.com/labstack/echo)，结合 JWT 中间件进行身份验证与用户鉴权。API document: <https://github.com/ligen131/remember-me/blob/main/docs/api.md>
-- Front-end design Figma: <https://www.figma.com/file/RId4GyA52xC7dKBRnKbfoT>
+- Front-end design Figma: <https://www.figma.com/file/RId4GyA52xC7dKBRnKbfoT> 前端设计理念：保持简洁性和用户友好性的设计原则，以用户的上传“记忆”与整理“记忆”的需求和体验为中心开展设计。以简约现代的设计风格、干净极简的界面设计对信息进行有效的传达，实现简单、清晰而直观的用户体验，便于用户轻松上手使用。
 
 ## LICENSE
 
