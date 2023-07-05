@@ -37,15 +37,35 @@
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color: bisque;
     opacity: 0.6;
     transform-origin: 50% 50%;
     transition: 0.3s;
     z-index: 1;
 
-    --colorA: bisque;
+    --color: bisque;
 
-    filter: drop-shadow(0 0 2px var(--colorA))
-      drop-shadow(0 0 5px var(--colorA)) drop-shadow(0 0 15px var(--colorA));
+    background-color: var(--color);
+    filter: drop-shadow(0 0 2px var(--color)) drop-shadow(0 0 5px var(--color))
+      drop-shadow(0 0 15px var(--color));
+
+    &.color1 {
+      --color: #bebebe;
+    }
+
+    &.color2 {
+      --color: #d4d1c6;
+    }
+
+    &.color3 {
+      --color: #b6d5d7;
+    }
+
+    &.color4 {
+      --color: #f1ecd8;
+    }
+
+    &.color5 {
+      --color: #ffe4c4;
+    }
   }
 }

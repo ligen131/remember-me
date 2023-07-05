@@ -36,3 +36,11 @@ export interface UploadToken {
 export interface Answer {
   answer: string;
 }
+
+export interface LightStyle {
+  color: string;
+  top: number;
+  left: number;
+  width: number;
+  height: number;
+}
