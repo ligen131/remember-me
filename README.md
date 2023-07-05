@@ -58,6 +58,28 @@ Our product harnesses the power of generative AI technology to provide special a
 
 Demo deployed at <https://h5.hust.online/remember-me>
 
+主页
+
+![主页](img/%E4%B8%BB%E9%A1%B5.png)
+
+上传回忆界面
+
+![上传回忆界面](img/%E4%B8%8A%E4%BC%A0%E7%95%8C%E9%9D%A2.png)
+
+上传回忆演示：<https://github.com/ligen131/remember-me/blob/main/video/%E4%B8%8A%E4%BC%A0%E5%9B%9E%E5%BF%86%E6%BC%94%E7%A4%BA.mov>
+
+回忆界面
+
+![回忆界面](img/%E5%9B%9E%E5%BF%86%E7%95%8C%E9%9D%A2.png)
+
+主页回忆界面演示：<https://github.com/ligen131/remember-me/blob/main/video/%E4%B8%8A%E4%BC%A0%E5%9B%9E%E5%BF%86%E6%BC%94%E7%A4%BA.mov>
+
+AI 问答界面
+
+![AI 问答界面](img/AI%20%E9%97%AE%E7%AD%94%E7%95%8C%E9%9D%A2.png)
+
+AI 问答演示：<https://github.com/ligen131/remember-me/blob/main/video/AI%20%E9%97%AE%E7%AD%94%E6%BC%94%E7%A4%BA.mov>
+
 ## Technical Details 技术细节
 
 - The backend utilizes the Golang web framework [echo](https://github.com/labstack/echo) and incorporates JWT middleware for identity verification and user authentication. 后端使用 Golang Web 后端框架 [echo](https://github.com/labstack/echo)，结合 JWT 中间件进行身份验证与用户鉴权。API document: <https://github.com/ligen131/remember-me/blob/main/docs/api.md>
