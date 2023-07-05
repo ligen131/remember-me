@@ -1,6 +1,7 @@
 package main
 
 import (
+	"remember-me/controllers"
 	"remember-me/controllers/auth"
 	"remember-me/model"
 	"remember-me/shared/gpt"
@@ -31,6 +32,8 @@ func main() {
 	}
 
 	gpt.InitGpt(configuration.Gpt)
+	controllers.PeopleRelationshipInit(configuration.People)
+
 	err = qiniu.InitQiniu(configuration.Qiniu)
 	if err != nil {
 		panic(err)

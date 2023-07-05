@@ -40,4 +40,6 @@ func routes(e *echo.Echo) {
 	}
 
 	e.GET(apiVersionUrl+"/image/token", controllers.GetImageToken)
+
+	e.GET(apiVersionUrl+"/people/relationship", controllers.PeopleRelationshipGET)
 }

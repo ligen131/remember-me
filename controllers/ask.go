@@ -33,7 +33,7 @@ func AskGET(c echo.Context) error {
 		AllPosts = AllPosts + fmt.Sprintf("\n\n相关事件 %d：%s\n时间：%d 年 %d 月\n%s", index+1, post.Title, post.Year, post.Month, post.Text)
 	}
 
-	ans, err := gpt.GptHandle(prompt + AllPosts)
+	ans, err := gpt.GptHandle(AllPosts, prompt)
 	if err != nil {
 		return ResponseInternalServerError(c, "Send prompt to gpt failed.", err)
 	}

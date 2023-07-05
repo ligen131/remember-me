@@ -1,6 +1,7 @@
 package yamlconfig
 
 import (
+	"remember-me/controllers"
 	"remember-me/controllers/auth"
 	"remember-me/model"
 	"remember-me/shared/gpt"
@@ -19,6 +20,7 @@ type Configuration struct {
 	Authorization auth.Authorization `yaml:"Authorization"`
 	Gpt           gpt.GptConfig      `yaml:"openai"`
 	Qiniu         qiniu.Config       `yaml:"qiniu"`
+	People        controllers.People `yaml:"people"`
 }
 
 func ConfigLoad(path string) (Configuration, error) {
