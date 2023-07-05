@@ -44,3 +44,7 @@ export interface LightStyle {
   width: number;
   height: number;
 }
+
+export interface Relationship {
+  image_url: string;
+}

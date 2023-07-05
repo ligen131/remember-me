@@ -8,11 +8,20 @@
   background-color: $background-primary;
   display: flex;
 
+  .btn-back {
+    position: fixed;
+    cursor: pointer;
+    top: 16px;
+    left: 24px;
+    height: 36px;
+    width: 36px;
+  }
+
   .main {
     box-sizing: border-box;
     position: relative;
-    left: -20vw;
-    margin-left: 10vw;
+    left: 50%;
+    transform: translateX(-50%);
     height: 90vh;
     width: 60vw;
     margin-top: 10vh;

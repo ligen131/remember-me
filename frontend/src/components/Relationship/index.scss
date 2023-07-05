@@ -1,0 +1,24 @@
+.relationship {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+
+  .mask {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+  }
+
+  .relationship-box {
+    position: relative;
+    top: 25vh;
+    height: 50vh;
+    margin: auto;
+
+    & > img {
+      height: 100%;
+    }
+  }
+}

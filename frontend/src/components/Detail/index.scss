@@ -16,9 +16,11 @@
     top: 30vh;
     height: 40vh;
     width: fit-content;
+    max-width: 50vw;
     margin: auto;
     background-color: white;
     display: flex;
+    z-index: 1000;
 
     .left {
       height: 100%;
@@ -30,9 +32,11 @@
     }
 
     .right {
+      box-sizing: border-box;
       height: 100%;
       width: 30vw;
       padding: 16px;
+      overflow-y: auto;
 
       .title {
         font-size: 24px;

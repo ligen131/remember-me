@@ -1,3 +1,5 @@
+@import "../../../assets/css/color.scss";
+
 .dialog-card {
   position: relative;
   margin: 32px 0;
@@ -7,20 +9,52 @@
   &.right {
     left: 20%;
     flex-direction: row-reverse;
+
+    // .dialog-box::before {
+    //   position: absolute;
+    //   left: 100%;
+    //   content: "";
+    //   height: 0;
+    //   width: 0;
+    //   border-left: 18px solid white;
+    //   border-right: none;
+    //   border-top: 12px solid $background-primary;
+    //   border-bottom: 12px solid $background-primary;
+    // }
   }
 
   .avatar {
+    margin-top: 10px;
     width: 32px;
     min-width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: #c4c4c4;
+
+    & > img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
   }
 
   .dialog-box {
+    position: relative;
     padding: 16px;
-    border-radius: 10px;
+    border-radius: 16px;
     margin: 0 16px;
     background-color: white;
+    box-shadow: 4px 4px 20px #bebebe;
+
+    // &::before {
+    //   position: absolute;
+    //   left: -17px;
+    //   content: "";
+    //   height: 0;
+    //   width: 0;
+    //   border-right: 18px solid white;
+    //   border-top: 12px solid $background-primary;
+    //   border-bottom: 12px solid $background-primary;
+    // }
   }
 }
