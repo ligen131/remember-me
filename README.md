@@ -88,8 +88,46 @@ https://github.com/ligen131/remember-me/assets/61000196/7eea338f-85d7-4612-9a70-
 
 ## Technical Details 技术细节
 
-- The backend utilizes the Golang web framework [echo](https://github.com/labstack/echo) and incorporates JWT middleware for identity verification and user authentication. 后端使用 Golang Web 后端框架 [echo](https://github.com/labstack/echo)，结合 JWT 中间件进行身份验证与用户鉴权。API document: <https://github.com/ligen131/remember-me/blob/main/docs/api.md>
-- Front-end design Figma: <https://www.figma.com/file/RId4GyA52xC7dKBRnKbfoT> Front-end design concept: The design principles of simplicity and user-friendliness are maintained, with a focus on meeting the needs and experiences of users in terms of uploading and organizing their memories. The design adopts a minimalist and modern style, with clean and simple interface design to effectively convey information and achieve a straightforward, clear, and intuitive user experience, making it easy for users to get started and use. 前端设计理念：保持简洁性和用户友好性的设计原则，以用户的上传“记忆”与整理“记忆”的需求和体验为中心开展设计。以简约现代的设计风格、干净极简的界面设计对信息进行有效的传达，实现简单、清晰而直观的用户体验，便于用户轻松上手使用。
+- The backend utilizes the Golang web framework [echo](https://github.com/labstack/echo) and incorporates JWT middleware for identity verification and user authentication. 
+  
+  后端使用 Golang Web 后端框架 [echo](https://github.com/labstack/echo)，结合 JWT 中间件进行身份验证与用户鉴权。
+  
+  API document: <https://github.com/ligen131/remember-me/blob/main/docs/api.md>
+- Front-end design Figma: <https://www.figma.com/file/RId4GyA52xC7dKBRnKbfoT> 
+  
+  Front-end design concept: The design principles of simplicity and user-friendliness are maintained, with a focus on meeting the needs and experiences of users in terms of uploading and organizing their memories. The design adopts a minimalist and modern style, with clean and simple interface design to effectively convey information and achieve a straightforward, clear, and intuitive user experience, making it easy for users to get started and use. 
+  
+  前端设计理念：保持简洁性和用户友好性的设计原则，以用户的上传“记忆”与整理“记忆”的需求和体验为中心开展设计。以简约现代的设计风格、干净极简的界面设计对信息进行有效的传达，实现简单、清晰而直观的用户体验，便于用户轻松上手使用。
+
+### How to build
+
+#### Backend
+
+Demo deployed at <https://api.hust.online/remember-me/api/v1>
+
+```shell
+$ go mod download
+$ go run main.go
+```
+
+The backend API will listening at [`http://localhost:3435`](`http://localhost:3435`)
+
+##### Docker
+
+```shell
+$ docker build -t remember-me .
+$ docker run remember-me
+```
+
+#### Frontend
+
+```shell
+$ cd frontend
+$ npm i
+$ npm run build
+```
+
+The files generated after the build are placed in the `dist` folder.
 
 ## LICENSE
 
