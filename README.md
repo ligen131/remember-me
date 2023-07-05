@@ -58,32 +58,38 @@ Our product harnesses the power of generative AI technology to provide special a
 
 Demo deployed at <https://h5.hust.online/remember-me>
 
-主页
+Index page 主页
 
 ![主页](img/%E4%B8%BB%E9%A1%B5.png)
 
-上传回忆界面
+Uploading memory page 上传回忆界面
 
 ![上传回忆界面](img/%E4%B8%8A%E4%BC%A0%E7%95%8C%E9%9D%A2.png)
 
-上传回忆演示：<https://github.com/ligen131/remember-me/blob/main/video/%E4%B8%8A%E4%BC%A0%E5%9B%9E%E5%BF%86%E6%BC%94%E7%A4%BA.mov>
+Uploading memory demo 上传回忆演示：
 
-回忆界面
+https://github.com/ligen131/remember-me/assets/61000196/666df87e-52fe-442a-aeda-7472a1ef5343
+
+Memory page 回忆界面
 
 ![回忆界面](img/%E5%9B%9E%E5%BF%86%E7%95%8C%E9%9D%A2.png)
 
-主页回忆界面演示：<https://github.com/ligen131/remember-me/blob/main/video/%E4%B8%8A%E4%BC%A0%E5%9B%9E%E5%BF%86%E6%BC%94%E7%A4%BA.mov>
+主页回忆界面演示：
 
-AI 问答界面
+https://github.com/ligen131/remember-me/assets/61000196/48f01338-31b6-47a3-9116-82f806d9b4bb
+
+AI Q&A page
 
 ![AI 问答界面](img/AI%20%E9%97%AE%E7%AD%94%E7%95%8C%E9%9D%A2.png)
 
-AI 问答演示：<https://github.com/ligen131/remember-me/blob/main/video/AI%20%E9%97%AE%E7%AD%94%E6%BC%94%E7%A4%BA.mov>
+AI Q&A Demo: 
+
+https://github.com/ligen131/remember-me/assets/61000196/7eea338f-85d7-4612-9a70-fec19c029c82
 
 ## Technical Details 技术细节
 
 - The backend utilizes the Golang web framework [echo](https://github.com/labstack/echo) and incorporates JWT middleware for identity verification and user authentication. 后端使用 Golang Web 后端框架 [echo](https://github.com/labstack/echo)，结合 JWT 中间件进行身份验证与用户鉴权。API document: <https://github.com/ligen131/remember-me/blob/main/docs/api.md>
-- Front-end design Figma: <https://www.figma.com/file/RId4GyA52xC7dKBRnKbfoT> 前端设计理念：保持简洁性和用户友好性的设计原则，以用户的上传“记忆”与整理“记忆”的需求和体验为中心开展设计。以简约现代的设计风格、干净极简的界面设计对信息进行有效的传达，实现简单、清晰而直观的用户体验，便于用户轻松上手使用。
+- Front-end design Figma: <https://www.figma.com/file/RId4GyA52xC7dKBRnKbfoT> Front-end design concept: The design principles of simplicity and user-friendliness are maintained, with a focus on meeting the needs and experiences of users in terms of uploading and organizing their memories. The design adopts a minimalist and modern style, with clean and simple interface design to effectively convey information and achieve a straightforward, clear, and intuitive user experience, making it easy for users to get started and use. 前端设计理念：保持简洁性和用户友好性的设计原则，以用户的上传“记忆”与整理“记忆”的需求和体验为中心开展设计。以简约现代的设计风格、干净极简的界面设计对信息进行有效的传达，实现简单、清晰而直观的用户体验，便于用户轻松上手使用。
 
 ## LICENSE
 
