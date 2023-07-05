@@ -1,0 +1,22 @@
+@import "../../assets/css/color.scss";
+.side-bar {
+  position: relative;
+  left: -10vw;
+  width: 30vw;
+  display: flex;
+  transition: all 0.3s;
+
+  &.show {
+    left: 0;
+  }
+
+  .side {
+    position: relative;
+    width: 10vw;
+    background-color: white;
+  }
+
+  .tag-list {
+    background-color: $background-primary;
+  }
+}

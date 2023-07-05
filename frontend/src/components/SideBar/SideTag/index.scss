@@ -1,0 +1,9 @@
+@import "../../../assets/css/color.scss";
+.side-tag {
+  position: relative;
+  height: 20vh;
+  width: 0;
+  border-top: 36px solid $background-primary;
+  border-bottom: 36px solid $background-primary;
+  border-left: 36px solid white;
+}

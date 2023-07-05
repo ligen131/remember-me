@@ -1,0 +1,26 @@
+.dialog-card {
+  position: relative;
+  margin: 32px 0;
+  width: 80%;
+  display: flex;
+
+  &.right {
+    left: 20%;
+    flex-direction: row-reverse;
+  }
+
+  .avatar {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+  }
+
+  .dialog-box {
+    padding: 16px;
+    border-radius: 10px;
+    margin: 0 16px;
+    background-color: white;
+  }
+}
