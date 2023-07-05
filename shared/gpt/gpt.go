@@ -55,13 +55,13 @@ type gptChoices struct {
 	Message gptMsg `json:"message"`
 }
 
-func GptHandle(message string) (string, error) {
+func GptHandle(message string, question string) (string, error) {
 	reqBody := gptReq{
 		Model: model,
 		Messages: []gptMsg{
 			{
 				Role:    "user",
-				Content: prompt + message,
+				Content: message + prompt + question,
 			}},
 	}
 	logs.Debug("Send to GPT: ", zap.String("content", reqBody.Messages[0].Content))
