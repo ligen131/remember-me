@@ -3,7 +3,7 @@ import "./index.scss";
 import Light from "@/components/Light";
 import { useState, useEffect } from "react";
 import uploadImg from "@assets/upload.svg";
-import logoImg from "@assets/logo.jpg";
+import logoImg from "@assets/logo.png";
 import chatImg from "@assets/chat.svg";
 import relationshipImg from "@assets/relationship.svg";
 import { useNavigate } from "react-router-dom";
