@@ -1,0 +1,62 @@
+@use "sass:math";
+
+.loading {
+  position: relative;
+  width: 100%;
+  .paws {
+    $animation-duration: 3.5s;
+    display: flex;
+    width: 12rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    &:hover {
+      .paw {
+        animation-play-state: paused;
+      }
+    }
+    .paw {
+      animation: shinePaw infinite $animation-duration;
+      width: 6%;
+      @keyframes shinePaw {
+        0% {
+          opacity: 1;
+        }
+        70% {
+          opacity: 0;
+        }
+        95% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      &:nth-child(even) {
+        transform: rotateX(180deg);
+        margin-top: 17%;
+      }
+
+      @for $i from 1 through 8 {
+        &:nth-last-child(#{$i}) {
+          animation-delay: -$i * math.div($animation-duration, 8);
+        }
+      }
+    }
+  }
+
+  &.post-list-loading {
+    padding-bottom: 64rpx;
+  }
+
+  .loading-text-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loading-text {
+      text-align: center;
+    }
+  }
+}
