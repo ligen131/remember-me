@@ -1,6 +1,5 @@
 import "./index.scss";
 import sendImg from "@assets/send.svg";
-import uploadImg from "@assets/upload.svg";
 import { useState } from "react";
 
 interface ChatInputProps {
